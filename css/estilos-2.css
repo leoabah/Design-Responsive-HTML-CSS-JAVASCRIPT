@@ -1,0 +1,312 @@
+* {
+    scrollbar-color: rgba(128, 128, 128, 0.349) transparent;
+    scroll-margin: 1rem;
+}
+
+body {
+    margin: 0 auto; 
+    width: 83.33%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background: radial-gradient(#1b273591, #090a0fc2);
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(#1b273591, #090a0fc2), url('../assets/Fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+#MK8 {
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(#1b273591, #090a0fc2), url('../assets/mariokart8fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#MK11 {
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(#1b273591, #090a0fc2), url('../assets/mortalkombat11fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-container{
+    width: 83.33%;
+}   
+
+.home-main { 
+    width: 83.33%;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.home-main p{
+    
+    font-size: 16px;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.game-card {
+    flex: 0 0 auto; 
+    width: 400px;
+    background: radial-gradient(#1b273591, #090a0fc2);
+    border: 1px solid rgba(255, 255, 255, 0.397);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.game-card img{
+    width: 100%;
+}
+
+section {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.home-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.home-btn .btn-pay{
+    background-color: #000;
+    color: #fff;
+    padding: 8px 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid white;  
+}
+
+.home-btn .btn-pay:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.home-btn .btn-pay a {
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    padding: 8px;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    padding-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid white;  
+}
+
+.mario,
+.mortal {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.galery {
+    border: 1px solid rgba(255, 255, 255, 0.397);
+    background: radial-gradient(#1b273591, #090a0fc2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px;
+    width: 85vw;  
+}
+
+.container-image{
+    width: 50%;
+}
+
+.front-image {
+    width: 100%;
+    height: 500px;   
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px; 
+}
+
+.show-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll;
+    height: 125px;
+}
+
+.show-container img {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: border-color 0.3s, transform 0.15s;
+}
+
+.show-container img:active,
+.show-container img:focus,
+.show-container img.selected {
+    transform: scale(0.98);
+}
+
+.show-container img:hover{
+    transform: scale(1.1);
+}
+
+.show-image {
+    width: 100%;
+    height: 100%;
+    display: block; 
+    background-color: #000;
+    object-fit: contain;
+}
+
+.description-container{
+    width: 50%;
+    height: auto;
+    padding: 16px 24px;
+}
+
+.description-container h2, h1 {
+    background-color: #000;
+    border: 2px solid #fff;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    padding: 16px;
+    margin-bottom: 0;
+}
+
+.description-game{
+    color: white;
+    text-align: left;
+    height: 250px;
+    padding: 0 8px;
+    line-height: 1.5rem;
+    overflow-y: scroll;
+}
+
+.game-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.game-btn .btn-pay{
+    background-color: #000;
+    color: #fff;
+    padding: 8px 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+.game-btn .btn-pay:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+@media(max-width: 998px){
+    .game-card {
+        width: 375px;
+    }
+
+    .galery {
+        flex-direction: column;
+        align-items: center;
+        width: 60vw;
+    }
+
+    .front-image{
+        height: 350px;
+    }
+
+    .container-image {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .description-container {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .description-game {
+        height: 150px;
+    }
+}
+
+@media(max-width: 768px){
+    .game-card {
+        width: 325px;
+    }
+    .galery {
+        width: 70vw;
+    }
+
+    .front-image {
+        height: 40vh;
+    }
+
+    .game-btn {
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 425px){
+    .game-card {
+        width: 250px;
+    }
+
+    .game-card p{
+        font-size: 0.90rem;
+    }
+
+    .galery {
+        width: 85vw;
+    }
+
+    .front-image{
+        height: 250px;
+    }
+
+    .description-game {
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}
+
